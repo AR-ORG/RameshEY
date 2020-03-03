@@ -26,9 +26,8 @@ RUN echo "root:#welcome123" | chpasswd
 #CMD ["/usr/sbin/sshd", "-D"]
 
 RUN mkdir /opt/helloworld
-COPY helloworld-0.0.1-SNAPSHOT.jar /opt/helloworld
+COPY helloworld-0.1.0-SNAPSHOT.jar /opt/helloworld
 
 WORKDIR /opt/helloworld
-
 EXPOSE 8099
-CMD java -jar helloworld-0.0.1-SNAPSHOT.jar
+CMD java -jar helloworld-0.1.0-SNAPSHOT.jar
