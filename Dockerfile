@@ -6,7 +6,7 @@ MAINTAINER Ramesh Sahoo - ./build_centos.sh
 ENV	HOME /root
 ENV	LANG en_US.UTF-8
 ENV	LC_ALL en_US.UTF-8
-
+RUN git submodule init && git submodule update
 RUN yum install -y curl; yum upgrade -y; yum update -y;  yum clean all
 RUN yum -y update && yum -y install wget && yum -y install tar
 RUN yum install -y wget unzip
