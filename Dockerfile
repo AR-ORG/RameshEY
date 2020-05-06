@@ -28,5 +28,5 @@ RUN mkdir /opt/helloworld
 COPY helloworld-0.1.0-SNAPSHOT.jar /opt/helloworld
 
 WORKDIR /opt/helloworld
-EXPOSE 8099
+EXPOSE 8054
 CMD java -jar helloworld-0.1.0-SNAPSHOT.jar
